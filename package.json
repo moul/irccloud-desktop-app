@@ -1,0 +1,26 @@
+{
+  "name": "irccloud-desktop-app",
+  "version": "0.1.0",
+  "description": "IRC Cloud Desktop Application (irccloud.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moul/irccloud-desktop-app"
+  },
+  "keywords": [
+    "irc",
+    "irccloud",
+    "irccloud.com",
+    "desktop",
+    "application",
+    "desktop-app"
+  ],
+  "author": "Manfred Touron <m@42.am> (https://github.com/moul)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moul/irccloud-desktop-app/issues"
+  },
+  "homepage": "https://github.com/moul/irccloud-desktop-app",
+  "dependencies": {
+    "node-webkit-builder": "^1.0.11"
+  }
+}
