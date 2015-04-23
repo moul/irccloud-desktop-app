@@ -1,8 +1,7 @@
 {
-    "main": "https://www.irccloud.com/",
+    "main": "app.html",
     "name": "IRC Cloud",
     "version": "0.1.0",
-    "nodejs": false,
     "window": {
         "width": 1000,
         "height": 740,
