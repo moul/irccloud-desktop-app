@@ -14,5 +14,9 @@ release:
 	# WINDOWS
 	# makensis ./assets/installer.nsi
 
-open:
+open:	kill
 	open "./build/$(NAME)/osx64/$(NAME).app"
+
+kill:
+	-osascript -e 'quit app "IRC Cloud"' || true
+	-sleep .5

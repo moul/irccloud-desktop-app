@@ -3,10 +3,10 @@
     "name": "IRC Cloud",
     "version": "0.1.0",
     "window": {
-        "width": 1000,
+        "width": 1200,
         "height": 740,
         "title": "IRC Cloud",
         "icon": "icon.png",
-        "toolbar": true
+        "toolbar": false
     }
 }

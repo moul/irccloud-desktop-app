@@ -12,10 +12,27 @@ var isOSX = platform === 'osx64',
 
 // Create the app menu
 var mainMenu = new gui.Menu({type: 'menubar'});
+
 if (mainMenu.createMacBuiltin) {
   mainMenu.createMacBuiltin('IRC Cloud');
 }
+var helpMenu = new gui.Menu();
+mainMenu.append(new gui.MenuItem({
+  label: 'Help',
+  submenu: helpMenu
+}));
+helpMenu.append(new gui.MenuItem({
+  label: 'Dev Tools',
+  click: function(){
+    win.showDevTools();
+  }
+}));
 win.menu = mainMenu;
+
+
+
+
+
 
 
 // OS X
