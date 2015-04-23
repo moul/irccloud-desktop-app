@@ -1,0 +1,490 @@
+/*@-moz-document domain("irccloud.com"), domain("gist-assets.github.com") {*/
+/* AGENT_SHEET */
+  * {
+   border-color: #333 !important;
+  }
+  div.paste, div.paste h1, div.log div.gistwrap h1.gistwraptitle, .gist .gist-file {
+    border-color: #444 !important;
+  }
+  .ace-chrome .ace_gutter {
+    border-right: 1px solid #444 !important;
+  }
+  body {
+    background-color: #222 !important;
+    background-image: /*[[bg-choice]]*/ url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    /*[[bg-options]]*/
+    /*[[bg-options2]]*/
+  }
+  /* collapsible blocks +/- icons */
+  div.log div.groupedDisco span.discoWidget, div.log div.groupedJoinPart span.joinPartWidget {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHJlY3Qgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6Izk5OTtzdHJva2Utd2lkdGg6MTsiIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHg9IjQuNSIgeT0iMy41Ii8+PHBhdGggc3R5bGU9ImZpbGw6Izk5OTsiIGQ9Im0gOCA1IDEgLTAgMCAyIDIgMCAwIDEgLTIgMCAwIDIgLTEgLTAgTCA4IDggNiA4IDYgNyA4IDcgeiIgLz48L3N2Zz4=) !important;
+  }
+  div.log div.groupedDisco.expanded span.discoWidget, div.log div.groupedJoinPart.expanded span.joinPartWidget {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHJlY3Qgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6Izk5OTtzdHJva2Utd2lkdGg6MTsiIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHg9IjQuNSIgeT0iMy41Ii8+PHBhdGggc3R5bGU9ImZpbGw6Izk5OSIgZD0ibSAxMSA3IDAgMSBjIC0wIC0wIC01IDAgLTUgMCBMIDYgNyB6Ii8+PC9zdmc+) !important;
+  }
+  /* invert image */
+  canvas.clock {
+    filter: url("data:image/svg+xml;utf8, <svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'i\'><feColorMatrix color-interpolation-filters=\'srgb\' values=\'-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0\'/></filter></svg>#i");
+    -webkit-filter: invert(100%) !important;
+  }
+  body, html {
+    overflow: hidden !important;
+  }
+  .mainContainer, table.buffer {
+    border-width: 1px 1px 0 0 !important;
+  }
+  div.dateWrapper table, div.log div.dateChange p {
+    border: none !important;
+  }
+  button.action a, button.action span, .inputInfo, button a, button span, div.dateWrapper table, div.log div.dateChange p,
+  td.inputcell, div.dateWrapper table, div.log div.dateChange p, #uploadContextMenu {
+    box-shadow: none !important;
+  }
+  div.log div.gistwrap h1.gistwraptitle, .gist .gist-meta {
+    text-shadow: none !important;
+  }
+  .accountContainer, #memberContextMenu {
+    box-shadow: 0 0 20px #555 !important;
+  }
+  div.log div.hover span.date {
+    color: #fff !important;
+  }
+  div#timeContainer, div.log span.date, .gist .gist-meta, div.log div.gistwrap h1.gistwraptitle, body:not(.nick-colors) a.author,
+  div.log, div.paste h1 {
+    color: #666 !important;
+  }
+  .gist .gist-meta a, div.log div.gistwrap h1.gistwraptitle a, div#buffersFooter p a, div.log div.groupedJoinPart span.mode,
+  div.log span.prefix, div.log div.gistwrap h1.gistwraptitle a {
+    color: #999 !important;
+  }
+  .gist .gist-meta a, div.log div.gistwrap h1.gistwraptitle a {
+    font-weight: normal !important;
+  }
+  div.log div.chat, div.log div.error, div.log div.groupedLines, div.log div.me, div.log div.notice, div.log div.status,
+  div.log div.table, div.log div.warning, div.buffermain, button a, button span, div.dateWrapper table, div.log div.dateChange p,
+  #channelContextMenu.active.mod ul.actions li a.topic, #memberContextMenu ul.actions li a,
+  td.statuscell div.status h2.bufferHeading span.label, .gist .line-pre, #memberContextMenu div.userContext, .contextMenu a,
+  .gist, .gist .highlight, div.paste h1 span.actions a, div.log div.groupedJoinPart span.mode, div.log span.prefix,
+  #channelContextMenu.topicControl ul.actions li a.topic, .bufferContextMenu ul.actions li a, #uploadContextMenu ul.actions li a:hover {
+    color: #ccc !important;
+  }
+  #buffers .active a.buffer, #footer a, #headercell a, #sidebar #limits a, h1#title a, div#searchResults div.searchResultDate a,
+  a.gist, a.link, a.reconnect, span.reconnect, #buffers a.buffer, #buffers p.archiveToggle a, #buffers p.join a, .gist a,
+  div.log div.chat a:not(.c0):not(.c1):not(.c2):not(.c3):not(.c4):not(.c5):not(.c6):not(.c7):not(.c8):not(.c9):not(.c10):not(.c11):not(.c12):not(.c13),
+  div.log div.notice a {
+    color: #16a !important;
+  }
+  div.log div.backlogDivider hr, div.log div.fetch hr, .sidebarIndicatorUnread {
+    border-color: #16a !important;
+  }
+  .sidebarIndicatorUnread {
+    background: #16a !important;
+  }
+  div.paste h1 span.actions a:hover {
+    color: #38c !important;
+  }
+  a, div.log div.chat a, div.log div.error a, div.log div.groupedLines a, div.log div.me a, div.log div.status a,
+  div.log div.table a, div.log div.warning a, #footer a, #headercell a, #sidebar #limits a, h1#title a {
+    color: #16a;
+  }
+  a:hover, #footer a:hover, #headercell a:hover, #sidebar #limits a:hover, h1#title a:hover,
+  ul.memberList li.members h2 {
+    color: #38c !important;
+  }
+  ul.memberList li.members h2 span.memberCount {
+    color: #5af !important;
+  }
+  .overlay_container_type_connecting_restricted .overlayHead, .overlay_container_type_global_system_message .overlayHead {
+    color: #c60 !important;
+  }
+  .extras span.extrasBar, #buffers .active.selected a.buffer, #buffers .active.selected a.buffer:hover, .extras span.extrasBar,
+  #buffers .selected a.buffer, #buffers .selected a.buffer:hover, .connectionStatus, #uploadContextMenu ul.actions li a:hover {
+    background: #136 !important;
+    color: #fff !important;
+  }
+  .extras span.extrasBar:hover, .extras span.extrasDismiss, #invites span.numInvites {
+    background: #358 !important;
+  }
+  .extras span.extrasDismiss:hover {
+    background: #57a !important;
+  }
+  .overlay_container_type_connecting_restricted .overlayHead, .overlay_container_type_global_system_message .overlayHead {
+    background: linear-gradient(#431,#320) !important;
+  }
+  .overlay_container_type_global_system_message, .userInfo {
+    border-color: #631 !important;
+    background: #320 !important;
+  }
+  input, textarea, body, ul.memberList a, #statusActions b, #statusActions strong, .inputInfo span.item a,
+  #buffers p.archiveToggle a:hover, #buffers p.openArchiveToggle a, #buffers p.openArchiveToggle a:hover, .bufferContextMenu,
+  a.author:not(.c0):not(.c1):not(.c2):not(.c3):not(.c4):not(.c5):not(.c6):not(.c7):not(.c8):not(.c9):not(.c10):not(.c11):not(.c12):not(.c13),
+  a.nick:not(.c0):not(.c1):not(.c2):not(.c3):not(.c4):not(.c5):not(.c6):not(.c7):not(.c8):not(.c9):not(.c10):not(.c11):not(.c12):not(.c13),
+  div.log div.fetch span {
+    color: #ddd !important;
+  }
+  div.log div.bottomSeen span, div.log div.focusSeen span, div.log div.lastSeen span.text, div.paste.nocode pre.body span {
+    color: #aaa !important;
+  }
+  #statusActions, .inputInfo span.hint, div.log span.me_prefix {
+    color: #555 !important;
+  }
+  div.groupedJoinPart {
+    border-color: transparent !important;
+  }
+  div.groupedJoinPart:hover {
+    border-color: #333 !important;
+  }
+  #settingsDeleteAccount {
+    border-color: #822 !important;
+  }
+  #buffers h2.active.unread, #buffers ul.buffers .active.unread a.buffer {
+    border-left-color: #16a !important;
+  }
+  #buffers li.connection, #uploadContextMenu {
+    border: 1px solid #333 !important;
+  }
+  #invites span.numInvites {
+    padding: 0 3px 0 3px !important;
+  }
+  .bufferHead {
+    padding: 4px !important;
+  }
+  td.statuscell div.status h2.bufferHeading {
+    padding-top: 0 !important;
+  }
+  div#buffersFooter p a {
+    background-color: #222 !important;
+  }
+  div.log div.row.highlight {
+    background: #322 !important;
+  }
+  div.log div.self, .connectionStatus.disconnect a, .connectionStatus.edit a, .connectionStatus.reconnect a, .connectionStatus.upgrade a,
+  #pasteSidebar, .ui-autocomplete .ui-state-focus, .ui-autocomplete .ui-state-focus span.host, div.log div.groupedLines {
+    background: #1d2022 !important;
+  }
+  div#buffersFooter p a:hover {
+    background-color: #123 !important;
+  }
+  div.buffermain, .gist .line-numbers {
+    background: #141414 !important;
+  }
+  div.log div.warning {
+    background: #303018 !important;
+  }
+  #settingsDeleteAccount h2 {
+    background: linear-gradient(#822,#711) !important;
+  }
+  .overlayHead, div.paste h1, div.log div.gistwrap h1.gistwraptitle, .gist .gist-meta {
+    background: linear-gradient(#282828,#181818) !important;
+  }
+  input, textarea, td.nickcell, td.inputcell {
+    background: #111 !important;
+  }
+  .bufferHead, #buffers li.connection, div.memberwrapper, ul.memberList li.ops h2, ul.memberList li.ops ul,
+  .accountContainer, .gist .highlight, ul.memberList li.voiced h2, ul.memberList li.voiced ul, div.paste, div.paste pre.body ol li,
+  .gist .gist-file .gist-data, .gist .markdown-body .highlight pre, .gist .markdown-body pre, .mainContainer, form.addNetworkForm,
+  ul.memberList li.admin ul, ul.memberList li.admin h2, ul.memberList li.owner ul, ul.memberList li.owner h2,
+  ul.memberList li.halfops ul, ul.memberList li.halfops h2, .editNetworkOverlay, .overlaycontainer, div.log div.fetch span,
+  div.log div.bottomSeen span, div.log div.focusSeen span, div.log div.lastSeen span.text {
+    background: #181818 !important;
+  }
+  h2.addNetworkIdentityHeading span, h2.addNetworkAdvancedHeading a, .ui-autocomplete {
+    background-color: #181818 !important;
+  }
+  .gist .markdown-body .highlight pre, .gist .markdown-body pre {
+    background: #222 !important;
+    border: 1px solid #333 !important;
+  }
+  div.nickinputwrapper, button a, button span, div.dateWrapper table, div.log div.dateChange p, #buffers p.openArchiveToggle a,
+  .bufferContextMenu, #memberContextMenu div.userContext,
+  .contextMenu, .inputInfo, div.log div.groupedDisco.expanded, div.log div.groupedDisco:hover,
+  div.log div.groupedJoinPart.expanded, div.log div.groupedJoinPart:hover, .discoGroup.expanded div, .joinPartGroup.expanded div.messageRow,
+  div.log div.notice, #buffers h2 a.buffer, div.log div.status, #buffers p.archiveToggle a:hover, #buffers p.openArchiveToggle a,
+  #buffers p.openArchiveToggle a:hover, #buffers a.buffer:hover, td.uploadcell {
+    background: #242424 !important;
+  }
+  button:hover span, button:hover a,
+  #channelContextMenu.active.mod ul.actions li a.topic:hover, #channelContextMenu.active.mod ul.actions li a.topic:hover,
+  #memberContextMenu ul.actions li a:hover, .bufferContextMenu ul.actions li a.delete:hover, .bufferContextMenu ul.actions li a.export:hover,
+  .bufferContextMenu ul.actions li a.ignores:hover, .bufferContextMenu ul.actions li a.images:hover,
+  .bufferContextMenu ul.actions li a.joinpart:hover, .bufferContextMenu ul.actions li a.joinpartcollapse:hover,
+  .bufferContextMenu ul.actions li a.notifyAll:hover, .bufferContextMenu ul.actions li a.pastes:hover,
+  .bufferContextMenu ul.actions li a.tweets:hover, .bufferContextMenu ul.actions li a.unread:hover,
+  .bufferContextMenu.active ul.actions li a:hover {
+     background-color: #333 !important;
+  }
+
+  #channelContextMenu ul.actions li.notifyAll a, #channelContextMenu ul.actions li.showMembers a,
+  .bufferContextMenu ul.actions li.collapseDisconnects a, .bufferContextMenu ul.actions li.collapseJoinPart a,
+  .bufferContextMenu ul.actions li.inlineImages a, .bufferContextMenu ul.actions li.inlinePastes a,
+  .bufferContextMenu ul.actions li.inlineTweets a, .bufferContextMenu ul.actions li.showJoinPart a,
+  .bufferContextMenu ul.actions li.trackUnread a {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjM4NCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAzODQgNTEyIj48cGF0aCBkPSJNMzIwIDk2bC0xOTIgMTkyLTY0LTY0LTY0IDY0IDEyOCAxMjggMjU2LTI1Ni02NC02NHoiIGZpbGw9IiNjY2MiPjwvcGF0aD48L3N2Zz4=") !important;
+    background-size: 12px 16px !important;
+  }
+
+  #buffers h2 a.join {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMzEgMTJoLTExdi0xMWMwLS41NTItLjQ0OC0xLTEtMWgtNmMtLjU1MiAwLTEgLjQ0OC0xIDF2MTFoLTExYy0uNTUyIDAtMSAuNDQ4LTEgMXY2YzAgLjU1Mi40NDggMSAxIDFoMTF2MTFjMCAuNTUyLjQ0OCAxIDEgMWg2Yy41NTIgMCAxLS40NDggMS0xdi0xMWgxMWMuNTUyIDAgMS0uNDQ4IDEtMXYtNmMwLS41NTItLjQ0OC0xLTEtMXoiLz48L3N2Zz4K") !important;
+    background-size: contain !important;
+    background-position: 0% 0% !important;
+            filter: invert(30%) !important;
+    -webkit-filter: invert(30%) !important;
+  }
+  #buffers h2 a.join:hover {
+    background-position: 0% 0% !important;
+            filter: invert(60%) !important;
+    -webkit-filter: invert(60%) !important;
+  }
+
+  /* webkit scrollbars */
+  ::-webkit-scrollbar-track {
+    background: #181818 !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #333 !important;
+    border-color: #181818 !important;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background: #181818 !important;
+    border-color: #181818 !important;
+  }
+
+  /* custom checkbox/radio styles */
+  input[type="checkbox"], input[type="checkbox"]:focus, input[type="radio"], input[type="radio"]:focus,
+  input[type="checkbox"]:hover:active, input[type="radio"]:hover:active, input[type="checkbox"]:disabled,
+  input[type="checkbox"]:hover:disabled, input[type="checkbox"]:hover:active:disabled {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    background-color: #181818 !important;
+    border: 1px solid #555 !important;
+    border-radius: 3px !important;
+    color: #eee !important;
+    height: 1em !important;
+    width: 1em !important;
+  }
+  input[type=radio] {
+    border-radius: 100% !important;
+  }
+  input[type="checkbox"]:checked {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48cmVjdCBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeT0iMCIgeD0iMCIgZmlsbD0iIzAwMDAwMCIvPjxwYXRoIGQ9Im05OC43OTk5ODggMjEzbC0wLjc5OTk4OCA4OWMwIDAgMTAzIDEwMiAxMDQgMTAyYzEgMCAyMDUgLTIwMSAyMDUgLTIwMWMwIDAgMCAtOTAgMCAtOTFjLTAuNzk5OTg4IDAgLTIwNCAyMDMgLTIwNCAyMDNsLTEwNCAtMTAyeiIgZmlsbD0iI2RkZGRkZCIvPjwvZz48L3N2Zz4KCg==) !important;
+    background-size: cover !important;
+  }
+  input[type="checkbox"]:indeterminate {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48cmVjdCBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeT0iMCIgeD0iMCIgZmlsbD0iIzAwMDAwMCIvPjxyZWN0IGhlaWdodD0iMTI4IiB3aWR0aD0iMzg0IiB5PSIxOTIiIHg9IjY0IiBmaWxsPSIjZGRkZGRkIi8+PC9nPjwvc3ZnPg==) !important;
+    background-size: cover !important;
+  }
+  input[type=radio]:checked {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48Zz48cmVjdCBoZWlnaHQ9IjUxMiIgd2lkdGg9IjUxMiIgeT0iMCIgeD0iMCIgZmlsbD0iIzAwMDAwMCIvPjxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iNjQiIGZpbGw9IiNkZGRkZGQiLz48L2c+PC9zdmc+) !important;
+    background-size: cover !important;
+  }
+
+
+  /* nick colors */
+  .nick-colors div.log div.row span a.c0, .nick-colors div.log div.row span a.c0:hover,
+  .nick-colors div.log div.row span a.hover.c0, .nick-colors div.log div.row span a.hover.c0:hover,
+  .nick-colors ul.memberList li a.c0:hover, .nick-colors ul.memberList li.hover a.c0 {
+    color: rgb(255,64,64) !important;
+  }
+  .nick-colors div.log div.row span a.c1, .nick-colors div.log div.row span a.c1:hover,
+  .nick-colors div.log div.row span a.hover.c1, .nick-colors div.log div.row span a.hover.c1:hover,
+  .nick-colors ul.memberList li a.c1:hover, .nick-colors ul.memberList li.hover a.c1 {
+    color: rgb(255,245,64) !important;
+  }
+  .nick-colors div.log div.row span a.c2, .nick-colors div.log div.row span a.c2:hover,
+  .nick-colors div.log div.row span a.hover.c2, .nick-colors div.log div.row span a.hover.c2:hover,
+  .nick-colors ul.memberList li a.c2:hover, .nick-colors ul.memberList li.hover a.c2 {
+    color: rgb(64,255,226) !important;
+  }
+  .nick-colors div.log div.row span a.c3, .nick-colors div.log div.row span a.c3:hover,
+  .nick-colors div.log div.row span a.hover.c3, .nick-colors div.log div.row span a.hover.c3:hover,
+  .nick-colors ul.memberList li a.c3:hover, .nick-colors ul.memberList li.hover a.c3 {
+    color: rgb(64,102,255) !important;
+  }
+  .nick-colors div.log div.row span a.c4, .nick-colors div.log div.row span a.c4:hover,
+  .nick-colors div.log div.row span a.hover.c4, .nick-colors div.log div.row span a.hover.c4:hover,
+  .nick-colors ul.memberList li a.c4:hover, .nick-colors ul.memberList li.hover a.c4 {
+    color: rgb(255,64,182) !important;
+  }
+  .nick-colors div.log div.row span a.c5, .nick-colors div.log div.row span a.c5:hover,
+  .nick-colors div.log div.row span a.hover.c5, .nick-colors div.log div.row span a.hover.c5:hover,
+  .nick-colors ul.memberList li a.c5:hover, .nick-colors ul.memberList li.hover a.c5 {
+    color: rgb(255,124,64) !important;
+  }
+  .nick-colors div.log div.row span a.c6, .nick-colors div.log div.row span a.c6:hover,
+  .nick-colors div.log div.row span a.hover.c6, .nick-colors div.log div.row span a.hover.c6:hover,
+  .nick-colors ul.memberList li a.c6:hover, .nick-colors ul.memberList li.hover a.c6 {
+    color: rgb(143,255,64) !important;
+  }
+  .nick-colors div.log div.row span a.c7, .nick-colors div.log div.row span a.c7:hover,
+  .nick-colors div.log div.row span a.hover.c7, .nick-colors div.log div.row span a.hover.c7:hover,
+  .nick-colors ul.memberList li a.c7:hover, .nick-colors ul.memberList li.hover a.c7 {
+    color: rgb(64,223,255) !important;
+  }
+  .nick-colors div.log div.row span a.c8, .nick-colors div.log div.row span a.c8:hover,
+  .nick-colors div.log div.row span a.hover.c8, .nick-colors div.log div.row span a.hover.c8:hover,
+  .nick-colors ul.memberList li a.c8:hover, .nick-colors ul.memberList li.hover a.c8 {
+    color: rgb(86,64,255) !important;
+  }
+  .nick-colors div.log div.row span a.c9, .nick-colors div.log div.row span a.c9:hover,
+  .nick-colors div.log div.row span a.hover.c9, .nick-colors div.log div.row span a.hover.c9:hover,
+  .nick-colors ul.memberList li a.c9:hover, .nick-colors ul.memberList li.hover a.c9 {
+    color: rgb(255,64,121) !important;
+  }
+  .nick-colors div.log div.row span a.c10, .nick-colors div.log div.row span a.c10:hover,
+  .nick-colors div.log div.row span a.hover.c10, .nick-colors div.log div.row span a.hover.c10:hover,
+  .nick-colors ul.memberList li a.c10:hover, .nick-colors ul.memberList li.hover a.c10 {
+    color: rgb(255,185,64) !important;
+  }
+  .nick-colors div.log div.row span a.c11, .nick-colors div.log div.row span a.c11:hover,
+  .nick-colors div.log div.row span a.hover.c11, .nick-colors div.log div.row span a.hover.c11:hover,
+  .nick-colors ul.memberList li a.c11:hover, .nick-colors ul.memberList li.hover a.c11 {
+    color: rgb(64,255,166) !important;
+  }
+  .nick-colors div.log div.row span a.c12, .nick-colors div.log div.row span a.c12:hover,
+  .nick-colors div.log div.row span a.hover.c12, .nick-colors div.log div.row span a.hover.c12:hover,
+  .nick-colors ul.memberList li a.c12:hover, .nick-colors ul.memberList li.hover a.c12 {
+    color: rgb(64,163,255) !important;
+  }
+  .nick-colors div.log div.row span a.c13, .nick-colors div.log div.row span a.c13:hover,
+  .nick-colors div.log div.row span a.hover.c13, .nick-colors div.log div.row span a.hover.c13:hover,
+  .nick-colors ul.memberList li a.c13:hover, .nick-colors ul.memberList li.hover a.c13 {
+    color: rgb(207,64,255) !important;
+  }
+  /* syntax - inline gists */
+  .pl-c { color: #5F5A60 !important; font-style: italic !important; } /* comment */
+  .pl-c1 { color: #CF6A4C !important; } /* constant */
+  .pl-cce { color: #CF6A4C !important; } /* constant.character.escape */
+  .pl-cn { color: #CF6A4C !important; } /* constant.numeric */
+  .pl-coc { color: #CF6A4C !important; } /* constant.other.color */
+  .pl-cos { color: #8F9D6A !important; } /* constant.other.symbol */
+  .pl-e { color: #AC885B !important; } /* entity */
+  .pl-ef { color: #AC885B !important; } /* entity.function */
+  .pl-en { color: #AC885B !important; } /* entity.name */
+  .pl-enc { color: #CF6A4C !important; } /* entity.name.class */
+  .pl-enf { color: #AC885B !important; } /* entity.name.function */
+  .pl-enm { color: #AC885B !important; } /* entity.name.method-name */
+  .pl-ens { color: #CF6A4C !important; } /* entity.name.section */
+  .pl-ent { color: #CDA869 !important; } /* entity.name.tag */
+  .pl-entc { color: #AC885B !important; } /* entity.name.type.class */
+  .pl-enti { color: #AC885B !important; font-weight: bold !important; } /* entity.name.type.instance */
+  .pl-entm { color: #7587A6 !important; } /* entity.name.type.module */
+  .pl-eoa { color: #CDA869 !important; } /* entity.other.attribute-name */
+  .pl-eoac { color: #7587A6 !important; } /* entity.other.attribute-name.class */
+  .pl-eoac .pl-pde { color: #7587A6 !important; } /* punctuation.definition.entity */
+  .pl-eoai { color: #CDA869 !important; } /* entity.other.attribute-name.id */
+  .pl-eoai .pl-pde { color: #CDA869 !important; } /* punctuation.definition.entity */
+  .pl-eoi { color: #AC885B !important; } /* entity.other.inherited-class */
+  .pl-k { color: #CDA869 !important; } /* keyword */
+  .pl-ko { color: #CDA869 !important; } /* keyword.operator */
+  .pl-kolp { color: #CDA869 !important; } /* keyword.operator.logical.python */
+  .pl-kos { color: #CF6A4C !important; } /* keyword.other.special-method */
+  .pl-kou { color: #CF6A4C !important; } /* keyword.other.unit */
+  .pl-mai .pl-sf { color: #7587A6 !important; } /* support.function */
+  .pl-mb { color: #8F9D6A !important; font-weight: bold !important; } /* markup.bold */
+  .pl-mc { color: #CDA869 !important; } /* markup.changed */
+  .pl-mh { color: #CF6A4C !important; font-weight: normal !important; } /* markup.heading */
+  .pl-mh .pl-pdh { color: #CF6A4C !important; } /* markup.heading punctuation.definition.heading */
+  .pl-mi { color: #CDA869 !important; font-style: italic !important; } /* markup.italic */
+  .pl-ml { color: #8F9D6A !important; } /* markup.list */
+  .pl-mm { color: #7587A6 !important; } /* meta.module-reference */
+  .pl-mp { color: #C5AF75 !important; } /* meta.property-name */
+  .pl-mp1 .pl-sf { color: #DAD085 !important; } /* meta.property-value support.function */
+  .pl-mq { color: #CF6A4C !important; } /* markup.quote */
+  .pl-mr { color: #CDA869 !important; } /* meta.require */
+  .pl-ms { color: #CDA869 !important; } /* meta.selector */
+  .pl-pdb { color: #8F9D6A !important; font-weight: bold !important; } /* punctuation.definition.bold */
+  .pl-pdc { color: #5F5A60 !important; font-style: italic !important; } /* punctuation.definition.comment */
+  .pl-pdc1 { color: #CF6A4C !important; } /* punctuation.definition.constant */
+  .pl-pde { color: #CF6A4C !important; } /* punctuation.definition.entity */
+  .pl-pdi { color: #CDA869 !important; font-style: italic !important; } /* punctuation.definition.italic */
+  .pl-pds { color: #8F9D6A !important; } /* punctuation.definition.string */
+  .pl-pdv { color: #7587A6 !important; } /* punctuation.definition.variable */
+  .pl-pse { color: #CF6A4C !important; } /* punctuation.section.embedded */
+  .pl-pse .pl-s2 { color: #CF6A4C !important; } /* punctuation.section.embedded source */
+  .pl-s { color: #F9EE98 !important; } /* storage */
+  .pl-s1 { color: #8F9D6A !important; } /* string */
+  .pl-s2 { color: #ddd !important; } /* source */
+  .pl-mp .pl-s3 { color: #CDA869 !important; } /* support */
+  .pl-s3 { color: #DAD085 !important; } /* support */
+  .pl-sc { color: #DAD085 !important; } /* support.class */
+  .pl-scp { color: #CF6A4C !important; } /* support.constant.property-value */
+  .pl-sf { color: #DAD085 !important; } /* support.function */
+  .pl-smc { color: #AC885B !important; } /* storage.modifier.c */
+  .pl-smi { color: #ddd !important; } /* storage.modifier.import */
+  .pl-smp { color: #ddd !important; } /* storage.modifier.package */
+  .pl-sok { color: #CDA869 !important; } /* support.other.keyword */
+  .pl-sol { color: #8F9D6A !important; } /* string.other.link */
+  .pl-som { color: #7587A6 !important; } /* support.other.module */
+  .pl-sr { color: #7587A6 !important; } /* string.regexp */
+  .pl-sra { color: #CDA869 !important; } /* string.regexp string.regexp.arbitrary-repitition */
+  .pl-src { color: #CDA869 !important; } /* string.regexp.character-class */
+  .pl-sre { color: #CDA869 !important; } /* string.regexp source.ruby.embedded */
+  .pl-st { color: #CDA869 !important; } /* support.type */
+  .pl-stj { color: #7587A6 !important; } /* storage.type.java */
+  .pl-stp { color: #9B859D !important; } /* support.type.property-name */
+  .pl-sv { color: #9B859D !important; } /* support.variable */
+  .pl-v { color: #9B859D !important; } /* variable */
+  .pl-vi { color: #CF6A4C !important; } /* variable.interpolation */
+  .pl-vo { color: #AC885B !important; } /* */
+  .pl-vpf { color: #7587A6 !important; } /* variable.parameter.function */
+  /* Diff - Example: https://gist.github.com/silverwind/904159f1e71e2e626375 */
+  .pl-mi1 { color: #55A532 !important; background: #020 !important; } /* markup.inserted */
+  .pl-mdht { color: #55A532 !important; background: #020 !important; } /* meta.diff.header.to-file */
+  .pl-md { color: #BD2C00 !important; background: #200 !important; } /* markup.deleted */
+  .pl-mdhf { color: #BD2C00 !important; background: #200 !important; } /* meta.diff.header.from-file */
+  .pl-mdr { color: #CF6A4C !important; font-weight: normal !important;} /* meta.diff.range */
+  .pl-mdh { color: #7587A6 !important; font-weight: normal !important;} /* meta.diff.header */
+  .pl-mdi { color: #7587A6 !important; font-weight: normal !important;} /* meta.diff.index */
+  /* TODO: Fix unstyled classes below */
+  .pl-ib { background-color: #f93 !important; } /* invalid.broken */
+  .pl-id { background-color: #a31515 !important; color: #fff !important; } /* invalid.deprecated */
+  .pl-ii { background-color: #df5000 !important; color: #fff !important; } /* invalid.illegal */
+  .pl-iu { background-color: #b4b7b4 !important; } /* invalid.unimplemented */
+  .pl-mo { color: #969896 !important; } /* meta.output */
+  .pl-mri { color: #008080 !important; } /* markup.raw.inline */
+  .pl-ms1 { background-color: #f5f5f5 !important; } /* meta.separator */
+  .pl-va { color: #008080 !important; } /* variable.assignment */
+  .pl-vpu { color: #008080 !important; } /* variable.parameter.url */
+  .pl-entl { color: #ddd !important; } /* entity.name.tag.label */
+
+   /*! twilight */
+  .ace_editor {background:#181818!important;color:#ddd!important;}
+  .ace_editor .ace_gutter{background:#181818!important;color:#aaa!important}
+  .ace_editor .ace_print-margin{width:1px!important;background:#232323!important}
+  .ace_editor .ace_cursor{color:#A7A7A7!important}
+  .ace_editor .ace_marker-layer .ace_selection{background:rgba(221,240,255,.2)!important}
+  .ace_editor.ace_multiselect .ace_selection.ace_start{box-shadow:0 0 3px 0 #141414!important;border-radius:2px!important}
+  .ace_editor .ace_marker-layer .ace_step{background:#665200!important}
+  .ace_editor .ace_marker-layer .ace_bracket{margin:-1px 0 0 -1px!important;border:1px solid rgba(255,255,255,.25)!important}
+  .ace_editor .ace_marker-layer .ace_active-line{background:rgba(255,255,255,.031)!important}
+  .ace_editor .ace_gutter-active-line{background-color:rgba(255,255,255,.031)!important}
+  .ace_editor .ace_identifier{color:#7587A6!important}
+  .ace_editor .ace_invisible{color:rgba(255,255,255,.25)!important}
+  .ace_editor .ace_keyword,.ace_editor .ace_meta{color:#CDA869!important}
+  .ace_editor .ace_constant,.ace_editor .ace_constant.ace_character,.ace_editor .ace_constant.ace_character.ace_escape,
+  .ace_editor .ace_constant.ace_other,.ace_editor .ace_heading,.ace_editor .ace_markup.ace_heading,
+  .ace_editor .ace_support.ace_constant{color:#CF6A4C!important}
+  .ace_editor .ace_invalid.ace_illegal{color:#F8F8F8!important;background-color:rgba(86,45,86,.75)!important}
+  .ace_editor .ace_invalid.ace_deprecated{text-decoration:underline!important;font-style:italic!important;color:#D2A8A1!important}
+  .ace_editor .ace_support{color:#9B859D!important}
+  .ace_editor .ace_fold{background-color:#AC885B!important;border-color:#F8F8F8!important}
+  .ace_editor .ace_support.ace_function{color:#DAD085!important}
+  .ace_editor .ace_support.ace_type{color:#CDA869!important}
+  .ace_editor .ace_list,.ace_editor .ace_markup.ace_list,.ace_editor .ace_storage{color:#F9EE98!important}
+  .ace_editor .ace_entity.ace_name.ace_function,.ace_editor .ace_meta.ace_tag{color:#CDA869!important}
+  .ace_editor .ace_entity.ace_other.ace_attribute-name{color:#AC885B!important;} /* html attribute name */
+  .ace_editor .ace_string{color:#8F9D6A!important}
+  .ace_editor .ace_string.ace_regexp{color:#E9C062!important}
+  .ace_editor .ace_comment{font-style:italic!important;color:#5F5A60!important}
+  .ace_editor .ace_variable{color:#7587A6!important}
+  .ace_editor .ace_variable.ace_language{color:#9B859D!important}
+  .ace_editor .ace_xml-pe{color:#494949!important}
+  .ace_editor .ace_indent-guide{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWMQERFpYLC1tf0PAAgOAnPnhxyiAAAAAElFTkSuQmCC) right repeat-y!important}
+
+  /* hide stuff */
+  #sidebar #limits, h1#title span.logo, h1#title span.logotype, #loggedInAs {
+    display: none !important;
+  }
+/*}*/

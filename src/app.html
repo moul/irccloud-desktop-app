@@ -6,6 +6,13 @@
     <script src="app.js"></script>
   </head>
   <body>
-    <iframe id="app" src="https://www.irccloud.com/" nwdisable nwfaketop></iframe>
+    <!--<iframe id="app" src="https://www.irccloud.com/" nwdisable nwfaketop></iframe>-->
+    <webview id="app" src="https://www.irccloud.com/"></webview>
+    <script>
+     var wv = document.getElementById("app");
+     wv.addEventListener("loadcommit", function(e){
+       wv.insertCSS({file: "irccloud-dark.css"});
+     });
+    </script>
   </body>
 </html>

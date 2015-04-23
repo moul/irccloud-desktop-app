@@ -38,6 +38,7 @@ win.on('close', function(quit) {
 
 
 // Listen for DOM load
+/*
 window.onload = function() {
   var app = document.getElementById('app');
   var titleRegExp = /\((\d)\)/;
@@ -53,7 +54,7 @@ window.onload = function() {
     win.setBadgeLabel(label);
   }, 250);
 };
-
+*/
 
 // Devel
-win.showDevTools();
+//win.showDevTools();
