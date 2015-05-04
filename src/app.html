@@ -3,16 +3,10 @@
   <head>
     <title>IRC Cloud</title>
     <link rel="stylesheet" type="text/css" href="app.css" />
-    <script src="app.js"></script>
   </head>
   <body>
-    <!--<iframe id="app" src="https://www.irccloud.com/" nwdisable nwfaketop></iframe>-->
-    <webview id="app" src="https://www.irccloud.com/"></webview>
-    <script>
-     var wv = document.getElementById("app");
-     wv.addEventListener("loadcommit", function(e){
-       wv.insertCSS({file: "irccloud-dark.css"});
-     });
-    </script>
+    <iframe id="app" src="https://www.irccloud.com/" nwdisable nwfaketop></iframe>
+    <!--<webview id="app" src="https://www.irccloud.com/" nwdisable nwfaketop></webview>-->
+    <script src="app.js"></script>
   </body>
 </html>

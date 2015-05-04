@@ -2,6 +2,7 @@
     "main": "app.html",
     "name": "IRC Cloud",
     "version": "0.1.0",
+    "inject-js-end": "inject.js",
     "window": {
         "width": 1200,
         "height": 740,

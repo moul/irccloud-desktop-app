@@ -30,9 +30,15 @@ helpMenu.append(new gui.MenuItem({
 win.menu = mainMenu;
 
 
+var wv = document.getElementById("app");
+wv.addEventListener("loadcommit", function(e){
+  wv.insertCSS({file: "irccloud-dark.css"});
+});
 
-
-
+win.on('new-win-policy', function (frame, url, policy) {
+  gui.Shell.openExternal(url);
+  policy.ignore();
+});
 
 
 // OS X
