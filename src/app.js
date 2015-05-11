@@ -51,6 +51,7 @@ wv.addEventListener('loadprogress', function(e) {
   if (!loaded) {
     win.setProgressBar(e.progress);
     if (e.progress == 1) {
+      win.show();
       loaded = true;
     };
   }

@@ -4,6 +4,7 @@
     "version": "0.1.0",
     "inject-js-end": "inject.js",
     "window": {
+        "show": false,
         "width": 1200,
         "height": 740,
         "title": "IRC Cloud",
