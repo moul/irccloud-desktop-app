@@ -45,6 +45,16 @@ wv.addEventListener('newwindow', function(e) {
   window.open(e.targetUrl);
 });
 
+var loaded = false;
+wv.addEventListener('loadprogress', function(e) {
+  console.log(e.progress);
+  if (!loaded) {
+    win.setProgressBar(e.progress);
+    if (e.progress == 1) {
+      loaded = true;
+    };
+  }
+});
 
 
 // OS X
@@ -64,6 +74,7 @@ win.on('close', function(quit) {
     win.hide();
   }
 });
+
 
 // Listen for DOM load
 /*
