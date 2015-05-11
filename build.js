@@ -1,6 +1,7 @@
 var NwBuilder = require('node-webkit-builder');
 
 var nw = new NwBuilder({
+  version: '0.12.1',
   files: './src/**',
   platforms: ['osx64'],
   macIcns: './assets/IRCCloud.icns',
@@ -19,4 +20,5 @@ nw.build()
   })
   .catch(function(err) {
     console.error(err);
+    process.exit(1);
   });

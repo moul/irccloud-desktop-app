@@ -30,15 +30,21 @@ helpMenu.append(new gui.MenuItem({
 win.menu = mainMenu;
 
 
-var wv = document.getElementById("app");
-wv.addEventListener("loadcommit", function(e){
-  wv.insertCSS({file: "irccloud-dark.css"});
-});
-
 win.on('new-win-policy', function (frame, url, policy) {
   gui.Shell.openExternal(url);
   policy.ignore();
 });
+
+
+// skin css
+var wv = document.getElementById("app");
+wv.addEventListener("loadcommit", function(e){
+  wv.insertCSS({file: "irccloud-dark.css"});
+});
+wv.addEventListener('newwindow', function(e) {
+  window.open(e.targetUrl);
+});
+
 
 
 // OS X
@@ -58,7 +64,6 @@ win.on('close', function(quit) {
     win.hide();
   }
 });
-
 
 // Listen for DOM load
 /*
