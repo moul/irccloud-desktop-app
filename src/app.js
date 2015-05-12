@@ -29,7 +29,6 @@ helpMenu.append(new gui.MenuItem({
 }));
 win.menu = mainMenu;
 
-
 win.on('new-win-policy', function (frame, url, policy) {
   gui.Shell.openExternal(url);
   policy.ignore();
@@ -43,6 +42,34 @@ wv.addEventListener("loadcommit", function(e){
 });
 wv.addEventListener('newwindow', function(e) {
   window.open(e.targetUrl);
+});
+
+
+var contextMenu = new gui.Menu();
+contextMenu.append(new gui.MenuItem({
+  label: "Cut", click: function() {
+    wv.executeScript({code:'(function(){document.execCommand("cut");})()'});
+    console.log('Menu:', 'cutted to clipboard');
+  }
+}));
+contextMenu.append(new gui.MenuItem({
+  label: "Copy", click: function() {
+    wv.executeScript({code:'(function(){document.execCommand("copy");})()'});
+    console.log('Menu:', 'copied to clipboard');
+  }
+}));
+contextMenu.append(new gui.MenuItem({
+  label: "Paste", click: function() {
+    wv.executeScript({code:'(function(){document.execCommand("paste");})()'});
+    console.log('Menu:', 'pasted to textarea');
+  }
+}));
+
+wv.addEventListener('contextmenu', function(ev) {
+  console.log('contextmenu', ev);
+  ev.preventDefault();
+  contextMenu.popup(ev.x, ev.y);
+  return false;
 });
 
 
