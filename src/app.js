@@ -45,15 +45,37 @@ wv.addEventListener('newwindow', function(e) {
   window.open(e.targetUrl);
 });
 
+
 var loaded = false;
 wv.addEventListener('loadprogress', function(e) {
-  console.log(e.progress);
+  // console.log(e.progress);
   if (!loaded) {
     win.setProgressBar(e.progress);
     if (e.progress == 1) {
       win.show();
       loaded = true;
+      // win.setProgressBar(0);
     };
+  }
+});
+
+
+wv.addEventListener('permissionrequest', function(e) {
+  console.log('permissionrequest', e.permission);
+  e.request.allow();
+});
+
+
+wv.addEventListener('consolemessage', function(e) {
+  if (e.message.indexOf('"totalBadges::') == 0) {
+    var totalBadges = parseInt(e.message.substring(14, e.message.length - 1));
+    if (totalBadges) {
+      win.setBadgeLabel(totalBadges);
+    } else {
+      win.setBadgeLabel('');
+    }
+  } else {
+    console.log('wv.consolemessage', e.message);
   }
 });
 
