@@ -1,13 +1,13 @@
-# IRC Cloud Desktop Applicaiton (irccloud.com)
+**CloudIRC for Desktop**
+------------------------
 
-Build: 
+**Requirements**
 
-```bash
-make build
-```
+ - Make
+ - node-webkit-builder (local, not global)
+	 - `npm install node-webkit-builder`
+ 
+**Build/Run**
+ - `make build`
+ - `make open` <- OSX Only; otherwise run executable manually in /build
 
-Run:
-
-```bash
-make open
-```
