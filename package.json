@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/moul/irccloud-desktop-app",
   "dependencies": {
-    "node-webkit-builder": "^1.0.11"
+    "nw-builder": "^1.0.11"
   }
 }

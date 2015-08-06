@@ -4,6 +4,7 @@ NAME = IRC Cloud
 
 build:
 	node build.js
+	#if ubuntu use `nodejs build.js`
 	# cp "assets/mac-ffmpegsumo.so" "build/$(NAME)/osx64/$(NAME).app/Contents/Frameworks/nwjs Framework.framework/Libraries/ffmpegsumo.so"
 
 release:
@@ -14,6 +15,8 @@ release:
 	# WINDOWS
 	# makensis ./assets/installer.nsi
 
+	# LINUX
+	# 
 open:	kill
 	open "./build/$(NAME)/osx64/$(NAME).app"
 

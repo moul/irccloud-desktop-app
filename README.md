@@ -4,8 +4,8 @@
 **Requirements**
 
  - Make
- - node-webkit-builder (local, not global)
-	 - `npm install node-webkit-builder`
+ - nw-builder (local, not global)
+	 - `npm install nw-builder`
  
 **Build/Run**
  - `make build`
