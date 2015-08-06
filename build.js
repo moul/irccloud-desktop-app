@@ -1,9 +1,9 @@
-var NwBuilder = require('node-webkit-builder');
+var NwBuilder = require('nw-builder');
 
 var nw = new NwBuilder({
   version: '0.12.1',
   files: './src/**',
-  platforms: ['osx32', 'osx64', 'win32', 'win64'],
+  platforms: ['osx32', 'osx64', 'win32', 'win64', 'linux32', 'linux64'],
   macIcns: './assets/IRCCloud.icns',
   macZip: true,
   macPlist: {
