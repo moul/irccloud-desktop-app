@@ -1,6 +1,8 @@
 **CloudIRC for Desktop**
 ------------------------
 
+[![GuardRails badge](https://badges.production.guardrails.io/moul/irccloud-desktop-app.svg)](https://www.guardrails.io)
+
 **Requirements**
 
  - Make
